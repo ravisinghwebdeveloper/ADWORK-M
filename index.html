@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chauhan Property</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{box-sizing:border-box;}
+body{margin:0;font-family:Arial;background:#f4f4f4;}
+header{background:#0a1f44;color:white;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+nav a{color:white;margin:5px 10px;text-decoration:none;font-weight:bold;}
+.slider{position:relative;height:400px;overflow:hidden;}
+.slide{position:absolute;width:100%;height:100%;background-size:cover;background-position:center;transition:1s;}
+.overlay{background:rgba(0,0,0,0.5);height:100%;color:white;display:flex;align-items:center;padding-left:40px;}
+.overlay h1{font-size:40px;}
+.section{padding:40px;background:white;margin:15px;border-radius:10px;}
+.cards{display:flex;gap:15px;flex-wrap:wrap;}
+.card{background:#f9f9f9;padding:20px;border-radius:10px;flex:1;min-width:250px;box-shadow:0 0 10px rgba(0,0,0,0.1);}
+footer{background:#0a1f44;color:white;text-align:center;padding:15px;}
+input,textarea{width:100%;padding:10px;margin-bottom:10px;}
+button{background:#d4af37;border:none;padding:10px 20px;font-weight:bold;cursor:pointer;}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25d366;color:white;padding:15px;border-radius:50%;font-size:24px;text-decoration:none;}
+@media(max-width:768px){.overlay h1{font-size:26px;}header{flex-direction:column;align-items:flex-start;}}
+</style>
+</head>
+<body>
+<header>
+<h2>🏠 Chauhan Property</h2>
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Properties</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+<div class="slider">
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1568605114967-8130f3a36994');"></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1570129477492-45c003edd2be');"></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6');"></div>
+<div class="overlay">
+<div>
+<h1>Your Trusted Property Partner</h1>
+<p>Buy, Sell & Rent Residential & Commercial Properties</p>
+<button>View Properties</button>
+</div>
+</div>
+</div>
+<div class="section">
+<h2>About Us</h2>
+<p>Chauhan Property is a trusted real estate company providing residential and commercial properties with genuine deals and full customer satisfaction.</p>
+<ul>
+<li>10+ Years Experience</li>
+<li>500+ Happy Clients</li>
+<li>Verified Properties</li>
+</ul>
+</div>
+<div class="section">
+<h2>Featured Properties</h2>
+<div class="cards">
+<div class="card"><h3>2 BHK Flat</h3><p>₹25 Lakh</p></div>
+<div class="card"><h3>Commercial Shop</h3><p>₹40 Lakh</p></div>
+<div class="card"><h3>Luxury Villa</h3><p>₹75 Lakh</p></div>
+</div>
+</div>
+<div class="section">
+<h2>Our Services</h2>
+<ul>
+<li>Property Buying</li>
+<li>Property Selling</li>
+<li>Property Renting</li>
+<li>Legal Documentation</li>
+<li>Site Visit Assistance</li>
+</ul>
+</div>
+<div class="section">
+<h2>Contact Us</h2>
+<p>📍 Your City Name</p>
+<p>📞 +91 87000 15848</p>
+<p>📧 info@chauhanproperty.com</p>
+<form>
+<input type="text" placeholder="Name">
+<input type="text" placeholder="Mobile">
+<textarea placeholder="Message"></textarea>
+<button>Send Enquiry</button>
+</form>
+</div>
+<footer>© 2026 Chauhan Property. All Rights Reserved.</footer>
+<a class="whatsapp" href="https://wa.me/918700015848" target="_blank">💬</a>
+<script>
+let slides=document.querySelectorAll('.slide');let i=0;slides[0].style.opacity=1;
+setInterval(()=>{slides[i].style.opacity=0;i=(i+1)%slides.length;slides[i].style.opacity=1;},3000);
+</script>
+</body>
+</html>
