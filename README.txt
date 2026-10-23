@@ -25,3 +25,13 @@ WhatsApp enquiries open a prefilled WhatsApp message. The visitor must press Sen
 
 Hosting:
 Upload the complete adwork_hospitality_website folder contents to the static hosting provider's web root. Keep the assets folder alongside the HTML files.
+
+
+NEW PHOTO SECTIONS
+- Home page includes a 20-slot Happy Clients section.
+- First 3 client photos are included as happy-client-01.webp, happy-client-02.webp, happy-client-03.webp.
+- Add remaining client photos into assets using names happy-client-04.webp through happy-client-20.webp.
+- Gallery page includes 30 slots named gallery-01.webp through gallery-30.webp.
+- Gallery images 01-08 are included; add your remaining photos as gallery-09.webp through gallery-30.webp.
+- Missing photos display a clean placeholder until the named file is uploaded.
+- Keep all image files inside the website's assets folder. Filenames are case-sensitive on hosting.
